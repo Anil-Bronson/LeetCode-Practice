@@ -13,7 +13,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
                 return [n, i]
     return []
 
-def twoSum(self, nums: List[int], target: int) -> List[int]:
+def twoSum2(self, nums: List[int], target: int) -> List[int]:
     map = {}
 
     for i,n in enumerate(nums):
@@ -21,5 +21,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
         if compliment in map:
             return [map[compliment], i]
         map[n] = i
+    
+    return []
 
 
